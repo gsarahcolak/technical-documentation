@@ -1,0 +1,99 @@
+#escape{
+  font-weight: bold;
+  font-family: monospace;
+}
+.bold{
+  font-weight:bold;
+}
+/*UST KISIM DAHA SONRA HTML ILE BIRLIKTE DUZENLENECEK*/ 
+
+/*NAVBAR*/
+nav#navbar {
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+background-color: #fff;
+border-right: 1px solid #ddd;
+padding: 2rem 1rem;
+overflow-y: auto;
+}
+
+main#main-doc{
+  margin-left: 250px;
+  padding: 2rem;
+  font-size: 1rem;
+  max-width:1200px;
+  line-height: 1.6;
+}
+.nav-link{
+  display:block;
+  color: #2b4030;
+  text-align:left;
+  text-decoration: none;
+  padding: 0.5rem;
+  padding-left: 0;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 550;
+  transition: all 0.2s ease;
+}
+.nav-link:hover {
+background-color: #9dbda480;
+color: #162625;
+font-size: 1.15rem;
+}
+main section header{
+  text-align: center;
+  font-size: 1.5rem;
+  /*BU KISIM SONRA CALISILACAK*/
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent-dark);
+  /*--*/
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+main section header:first-of-type{
+  margin-top: 0;
+}
+.main-section{
+  background-color: #abc9b340;
+  border-radius: 12px;
+  padding: 1rem;
+  
+}
+.box-image img{
+  margin: 0 auto;
+  display:block;
+  margin-bottom: 1rem;
+  
+}
+.box-image{
+  padding-bottom: 1rem;
+}
+.main-section + .main-section {
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  /* NAVBAR */
+  nav#navbar {
+    position: static;         
+    width: 100%;              
+    height: auto;             
+    border-right: none;       
+    border-bottom: 1px solid #ddd; 
+  }
+
+  /* MAIN */
+  main#main-doc {
+    margin-left: 0;           
+    padding: 1rem;            
+  }
+
+  /* NAV-LINK */
+  .nav-link {
+    display: inline-block;    
+    margin: 0.5rem 1rem;      
+  }
+}

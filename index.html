@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+<link href="styles.css" rel="stylesheet">
+<title>Sarah’s Responsive Playbook</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-bar-header">FCC-RWD Handbook <i>bySarah<i></header>
+      <a class="nav-link" href="#Html_Elements">Html Elements</a>
+      <a class="nav-link" href="#Head_and_Meta">Head and Meta</a> 
+      <a class="nav-link" href="#Forms">Forms</a> 
+      <a class="nav-link" href="#Semantic_Tags">Semantic Tags</a> 
+      <a class="nav-link" href="#Css_Elements">Css Elements</a> 
+      <a class="nav-link" href="#Color_and_Font">Color and Font</a> 
+      <a class="nav-link" href="#Box_Model">Box Model</a> 
+      <a class="nav-link" href="#Positioning">Positioning</a> 
+      <a class="nav-link" href="#Layout">Layout</a> 
+      <a class="nav-link" href="#Responsive_Design">Responsive Design</a> 
+      <a class="nav-link" href="#Pseudo_Selectors">Pseudo Selectors</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Html_Elements">
+        <header>Html Elements</header>
+        <h1>Basic HTML Structure</h1>
+       <p>
+         <ul>
+            <li><span id="escape">&lt;!DOCTYPE html&gt;</span> → defines the document type (HTML5)</li>
+  <li><span id="escape">&lt;html&gt;</span> → root element of an HTML page</li>
+  <li><span id="escape">&lt;head&gt;</span> → contains metadata, title, links to stylesheets or scripts</li>
+  <li><span id="escape">&lt;body&gt;</span> → contains all visible page content</li>
+  <li><span id="escape">&lt;main&gt;</span> → represents the main content of the page (only one per page)</li>
+  <li><span id="escape">&lt;a&gt;</span> → anchor element, creates a hyperlink using the href attribute</li>
+  <li><span id="escape">&lt;p&gt;</span> → defines a paragraph</li>
+  <li><span id="escape">&lt;h1&gt; to &lt;h6&gt;</span> → define headings, from largest to smallest</li>
+  <li><span id="escape">&lt;img&gt;</span> → embeds an image into the page</li>
+         </ul>
+      </p>
+      <p>
+HTML elements are the fundamental building blocks of the web. 
+They provide the structure and meaning of a document by combining 
+tags, attributes, and content. An element usually consists of an 
+opening tag, optional attributes, the content itself, and a closing tag. 
+For example, the &ltp&gt element defines a paragraph, while the &lta&gt element 
+creates a hyperlink that connects one resource to another. Each element 
+has a semantic purpose, which improves both accessibility and 
+search engine optimization (SEO). By correctly using elements, 
+developers ensure that browsers, assistive technologies, and search 
+engines can all interpret the document in a consistent and meaningful way.
+</p>
+      </section>
+      <section class="main-section" id="Head_and_Meta">
+        <header>Head and Meta</header>
+    <p>
+The head element contains information about the page 
+that is not displayed directly. Meta tags provide details 
+such as character encoding, viewport settings, and description 
+for search engines.
+    </p>
+    <ul>
+  <li><span id="escape">&lt;title&gt;</span> → sets the page title shown in the browser tab</li>
+  <li><span id="escape">&lt;meta charset="UTF-8"&gt;</span> → defines character encoding</li>
+  <li><span id="escape">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span> → makes the page responsive</li>
+  <li><span id="escape">&lt;link rel="stylesheet" href="styles.css"&gt;</span> → connects an external CSS file</li>
+    </ul>
+
+      </section>
+      <section class="main-section" id="Forms">
+        <header>Forms</header>
+        <p>
+          Forms are used to collect user input. Labels can be connected to inputs by using the <span id="escape">for</span> attribute, which improves accessibility. <span class="bold">Radio buttons are grouped by giving them the same name attribute,</span> so the user can only select one option. Checkboxes allow multiple choices. An option can be pre-selected with the checked attribute, and required makes the input mandatory before submitting.
+        </p>
+        <ul>
+          <li><span id="escape">&ltform&gt</span>→ container for input elements</li>
+          <li><span id="escape">&ltinput type="text"&gt</span>→ single-line text field</li>
+          <li><span id="escape">&ltinput type="email"&gt</span>→ field that expects an email address</li>
+          <li><span id="escape">&ltinput type="radio"&gt</span>→ radio button, select one option</li>
+          <li><span id="escape">&ltinput type="checkbox"&gt</span>→ checkbox, select multiple options</li>
+          <li><span id="escape">&ltlabel&gt</span>→ label for an input field</li>
+          <li><span id="escape">&lttextarea&gt</span>→ multi-line text field</li>
+          <li><span id="escape">&ltselect&gt</span>→ dropdown menu</li>
+          <li><span id="escape">&ltbutton type="submit"&gt</span>submits the data form</li>
+        
+        </ul>
+      </section>
+      <section class="main-section" id="Semantic_Tags">
+        <header>Semantic Tags</header>
+<p>
+Semantic HTML refers to elements that clearly describe their meaning and role in the structure of a webpage. 
+Instead of using generic tags like <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>, semantic tags such as <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> improve readability, accessibility, and SEO.
+</p>
+        <h2>Why Semantic HTML?</h2>
+<p>
+Semantic HTML elements clearly describe their meaning in a human- and machine-readable way. 
+They improve accessibility, help with SEO, and make your code easier to read and maintain.
+Examples include: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.
+</p>
+      </section>
+      <section class="main-section" id="Css_Elements">
+        <header>Css Elements</header>
+        <h1>What is CSS?</h1>
+        <p>CSS (Cascading Style Sheets) is used to style and visually arrange HTML elements on a web page.
+It controls layout, colors, fonts, spacing, and much more.</p>
+          <ul>
+            <li>Common CSS Syntax</li>
+          </ul>
+          <pre>
+            selector {
+             property: value;
+            }
+          </pre>
+
+      </section>
+      <section class="main-section" id="Color_and_Font">
+        <header>Color and Font</header>
+        <h2>Color in CSS</h2>
+        <ul>
+          <li>color → sets the text color</li>
+          <li>background-color → sets the background color of an element</li>
+          <p>Colors can be defined using:</p>
+          <li>Named colors → red, blue, green, etc.</li>
+          <li>Hex values → #FF5733</li>
+          <li>RGB → rgb(255, 87, 51)</li>
+          <li>HSL → hsl(14, 100%, 60%)</li>
+          <li>Transparent → rgba, hsla (with alpha channel for opacity)</li>
+        </ul>
+        <h2>Font Styling in CSS</h2>
+      <ul>
+        <li><span class="bold">font-family</span> → defines which font to use</li>
+        <li><span class="bold">font-size</span> → sets the size of text (use px, em, rem)</li>
+        <li><span class="bold">font-weight</span> → controls thickness (normal, bold, 100–900)</li>
+        <li><span class="bold">font-style</span> → makes text italic, normal, or oblique</li>
+        <li><span class="bold">line-height</span> → controls spacing between lines</li>
+        <li><span class="bold">text-transform</span> → changes text case (uppercase, lowercase, capitalize)</li>
+        <li><span class="bold">letter-spacing</span> → space between letters</li>
+        <li><span class="bold">text-align</span> → aligns text inside its box</li>
+      </ul>
+      </section>
+      <section>
+        <div class="color-font-summary">  <!--CSSTE YAZI TIPINI DEGISTIR SONRA-->
+      <h2>Typography and Units</h2>
+      <h4> text-align – Common Values</h4>
+<pre>
+Used to align text inside a block-level element.
+
+<span class="bold">left</span> → aligns text to the left (default in LTR languages)
+
+<span class="bold">right</span> → aligns text to the right
+
+<span class="bold">center</span> → centers the text
+
+<span class="bold">justify</span> → stretches lines so that each line has equal width (like a newspaper)</pre>
+<h4>px, em , rem Short Summary</h4>
+<pre>
+  <span class="bold">px</span> → absolute unit
+
+Fixed size, does not scale with screen or parent element
+
+Example: font-size: 16px;
+
+<span class="bold">em</span> → relative to the parent element’s font-size
+
+Example: if parent is 16px, then 1.5em = 24px
+
+Can lead to compounding (nested elements)
+
+<span class="bold">rem</span> → relative to the root element’s (html) font-size
+
+More predictable than em
+
+Example: if html { font-size: 16px; }, then 1.5rem = 24px everywhere
+<code>
+  html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem; /* = 32px */
+}
+
+p {
+  font-size: 1em; /* = 16px if inherited from body */
+}
+</code>
+</pre>
+       </div>
+    </section>
+      <section class="main-section" id="Box_Model">
+        <header>Box Model</header>
+        <p>The CSS box model is a fundamental concept in web design. It defines how the size and spacing of every HTML element is calculated. Each element is treated as a rectangular box made up of four areas: content, padding, border, and margin. Understanding the box model is essential for accurate layout and spacing, as even small changes in padding or margin can affect how elements align on the page.</p>
+        <div class="box-image">
+          <img src="https://www.csssolid.com/images/box-model/css-box-model.png" alt="Box Model Illustration">
+          </div>
+      </section>
+      
+      <section class="main-section" id="Positioning"> <!--bu kismi sonra calis -->
+        <header>Positioning</header>
+        <div class="positioning-propery">
+        <p>CSS positioning allows you to control exactly where an element appears on the page. By using the position property, you can choose how an element is placed in relation to its normal position or other elements. There are five main position values: static (default), relative, absolute, fixed, and sticky. Each one behaves differently depending on the context and parent containers.</p>
+        <h4>static(default)</h4>
+        <p>This is the default position. The element is placed in the normal document flow and is not affected by top, right, bottom, or left properties.</p>
+        <h4>relative</h4>
+        <p>The element stays in the normal document flow, but you can shift it using top, right, bottom, or left — relative to its original position.</p>
+        <h4>absolute</h4>
+        <p>The element is removed from the normal flow and positioned relative to the nearest positioned (non-static) ancestor. If none exists, it's placed relative to the <html> element.</p>
+        <h4>fixed</h4>
+        <p>The element is positioned relative to the browser window. It stays in the same place even when the page is scrolled.</p>
+        <h4>sticky</h4>
+        <p>The element toggles between relative and fixed depending on the scroll position. It sticks to a defined position when you scroll past it.</p>
+</div>
+      </section>
+      <section class="main-section" id="Layout"><!--metinlerde bold eklenecek yerler var-->
+        <header>Layout</header>
+        <p>CSS layout techniques allow developers to organize and position elements on a webpage in a meaningful and visually appealing way. Layout determines how elements are sized, spaced, and aligned in relation to one another and to the page itself. A strong layout is essential for usability, readability, and responsive design.</p>
+        <p>In the early days of the web, layout was mostly handled using floats and positioning, but modern CSS provides powerful tools like <b>Flexbox</b> and <b>Grid</b>, which make complex layouts easier to build and maintain. These modern layout systems are designed to handle different screen sizes and orientations without relying on JavaScript hacks or excessive media queries.</p>
+        <p>Flexbox is best suited for one-dimensional layouts — either a row or a column — and it’s great for aligning elements dynamically even when their sizes change. CSS Grid, on the other hand, is designed for two-dimensional layouts, allowing you to define rows and columns and place items precisely within them.</p>
+        <p>Another important concept in layout is the box model, which defines how margins, borders, padding, and content interact. Understanding how these properties affect spacing is essential for creating clean, professional interfaces.</p>
+      </section>
+      <section class="main-section" id="Responsive_Design">
+        <header>Responsive Design</header>
+        <p>Responsive design is a web development approach that ensures websites look and function well on all screen sizes — from mobile phones to large desktop monitors. It adapts the layout and content based on the device's screen width, making the site accessible and user-friendly for everyone.</p>
+        <p>A responsive website typically uses relative units (like %, em, rem), <b>media queries</b>, and <b>flexible grid systems</b> to adjust elements dynamically. Instead of creating separate versions for each device, responsive design allows a single codebase to serve all users.</p>
+        <p>One key technique is using the <b>&ltmeta name="viewport"&gt</b> tag in the HTML <b>&lthead&gt</b>, which helps control how the page is displayed on mobile browsers. Combined with CSS media queries, this allows developers to change font sizes, rearrange layouts, or hide/show elements based on screen size.</p>
+        <ul><li>&ltmeta name="viewport" content="width=device-width , initial-scale=1.0"&gt</li></ul>
+      </section>
+      <section class="main-section" id="Pseudo_Selectors">
+        <header>Pseudo Selectors</header>
+        <p>Pseudo-selectors are special keywords added to selectors that let you target specific states or parts of elements — without having to add extra classes or IDs.<br>They help you style things like:
+        <ul>
+          <li>when a user hovers over a button</li>
+          <li>or select only the first paragraph in a container</li>
+          <li>or insert text before/after an element, just with CSS</li>
+        </ul>
+        </p>
+        <h3>Pseudo classes that starts with : </h3>
+        <p>These describe a special state of an element (like hover, focus, visited...).</p>
+        <h4>:hover</h4>
+        <p>Applies when the user’s mouse is over an element.</p>
+        <pre>
+          button:hover {
+            background-color: lightblue;
+          }
+        </pre>
+       <h4>:active</h4>
+       <p>Applies when the element is being clicked (active state).</p>
+       <pre>
+         button:active {
+           transform: scale(0.95);
+         }
+       </pre>
+       <h4>:focus</h4>
+       <p>Used for inputs or buttons that have been focused (e.g., clicked or tabbed to).</p>
+       <pre>
+         input:focus {
+           border: 2px solid dodgerblue;
+         }
+       </pre>
+       <h4>:first-child / :last-child</h4>
+<p>Targets the first or last child element inside a parent.</p>
+<pre>
+  p:first-child {
+   color: red;
+  }
+</pre>
+<h3>Pseudo-Elements That Starts with ::</h3>
+<p>These let you style specific parts of an element (not the whole)</p>
+<h4>::before , ::after</h4>
+<p>Let you insert content before or after an element — often used for decoration.</p>
+<pre>
+  h1::before {
+   content: "★ ";
+  }
+</pre>
+<h4>::first-letter</h4>
+<p>Targets the first letter of a block of text.</p>
+<pre>
+  p::first-letter {
+  font-size: 2rem;
+  color: crimson;
+}
+</pre>
+<h4>::selection</h4>
+<p>Applies styles to selected (highlighted) text.</p>
+<pre>
+  ::selection {
+    background: yellow;
+    color: black;
+  }
+</pre>
+      </section>
+    </main>
+  </body>
+</html>
